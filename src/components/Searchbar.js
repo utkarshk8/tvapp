@@ -12,6 +12,7 @@ const Searchbar = () => {
 
   const showsContext = useContext(ShowsContext);
   const { searchShows } = showsContext;
+  searchShows(searchTerm);
 
   const { alert, setAlert } = useContext(AlertsContext);
 
